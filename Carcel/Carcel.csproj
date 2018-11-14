@@ -318,5 +318,11 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BibliotecaCarcel\BibliotecaCarcel.csproj">
+      <Project>{a5af9bbd-fe0c-4e1f-b4e8-6ea8071c8a46}</Project>
+      <Name>BibliotecaCarcel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
