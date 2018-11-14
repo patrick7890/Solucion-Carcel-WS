@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace Carcel
 {
-    public partial class Form1 : Form
+    public partial class Listar_Preso : Form
     {
-        public Form1()
+        public Listar_Preso()
         {
             InitializeComponent();
-        }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
             preso.WSPresoClient p = new preso.WSPresoClient();
-            p.AgregarPreso(txtID.Text, txtNombre.Text, ushort.Parse(cboSexo.SelectedIndex.ToString()), ushort.Parse(cboVisita.SelectedIndex.ToString()), cboPenal.SelectedIndex);
 
+            dataGridView1.DataSource = p.listarTodo();
 
         }
-
-        
     }
 }

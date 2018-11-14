@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://service/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WSPenal" targetNamespace="http://service/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WSCarcelJava/WSPenal?xsd=1" namespace="http://service/" />
+    </xsd:schema>
+  </types>
+  <message name="createPenal">
+    <part name="parameters" element="tns:createPenal" />
+  </message>
+  <message name="createPenalResponse">
+    <part name="parameters" element="tns:createPenalResponse" />
+  </message>
+  <message name="countPenal">
+    <part name="parameters" element="tns:countPenal" />
+  </message>
+  <message name="countPenalResponse">
+    <part name="parameters" element="tns:countPenalResponse" />
+  </message>
+  <message name="findPenal">
+    <part name="parameters" element="tns:findPenal" />
+  </message>
+  <message name="findPenalResponse">
+    <part name="parameters" element="tns:findPenalResponse" />
+  </message>
+  <message name="findAllPenal">
+    <part name="parameters" element="tns:findAllPenal" />
+  </message>
+  <message name="findAllPenalResponse">
+    <part name="parameters" element="tns:findAllPenalResponse" />
+  </message>
+  <message name="removePenal">
+    <part name="parameters" element="tns:removePenal" />
+  </message>
+  <message name="removePenalResponse">
+    <part name="parameters" element="tns:removePenalResponse" />
+  </message>
+  <message name="buscarPenal">
+    <part name="parameters" element="tns:buscarPenal" />
+  </message>
+  <message name="buscarPenalResponse">
+    <part name="parameters" element="tns:buscarPenalResponse" />
+  </message>
+  <message name="editPenal">
+    <part name="parameters" element="tns:editPenal" />
+  </message>
+  <message name="editPenalResponse">
+    <part name="parameters" element="tns:editPenalResponse" />
+  </message>
+  <message name="findRangePenal">
+    <part name="parameters" element="tns:findRangePenal" />
+  </message>
+  <message name="findRangePenalResponse">
+    <part name="parameters" element="tns:findRangePenalResponse" />
+  </message>
+  <portType name="WSPenal">
+    <operation name="createPenal">
+      <input wsam:Action="http://service/WSPenal/createPenalRequest" message="tns:createPenal" />
+      <output wsam:Action="http://service/WSPenal/createPenalResponse" message="tns:createPenalResponse" />
+    </operation>
+    <operation name="countPenal">
+      <input wsam:Action="http://service/WSPenal/countPenalRequest" message="tns:countPenal" />
+      <output wsam:Action="http://service/WSPenal/countPenalResponse" message="tns:countPenalResponse" />
+    </operation>
+    <operation name="findPenal">
+      <input wsam:Action="http://service/WSPenal/findPenalRequest" message="tns:findPenal" />
+      <output wsam:Action="http://service/WSPenal/findPenalResponse" message="tns:findPenalResponse" />
+    </operation>
+    <operation name="findAllPenal">
+      <input wsam:Action="http://service/WSPenal/findAllPenalRequest" message="tns:findAllPenal" />
+      <output wsam:Action="http://service/WSPenal/findAllPenalResponse" message="tns:findAllPenalResponse" />
+    </operation>
+    <operation name="removePenal">
+      <input wsam:Action="http://service/WSPenal/removePenalRequest" message="tns:removePenal" />
+      <output wsam:Action="http://service/WSPenal/removePenalResponse" message="tns:removePenalResponse" />
+    </operation>
+    <operation name="buscarPenal">
+      <input wsam:Action="http://service/WSPenal/buscarPenalRequest" message="tns:buscarPenal" />
+      <output wsam:Action="http://service/WSPenal/buscarPenalResponse" message="tns:buscarPenalResponse" />
+    </operation>
+    <operation name="editPenal">
+      <input wsam:Action="http://service/WSPenal/editPenalRequest" message="tns:editPenal" />
+      <output wsam:Action="http://service/WSPenal/editPenalResponse" message="tns:editPenalResponse" />
+    </operation>
+    <operation name="findRangePenal">
+      <input wsam:Action="http://service/WSPenal/findRangePenalRequest" message="tns:findRangePenal" />
+      <output wsam:Action="http://service/WSPenal/findRangePenalResponse" message="tns:findRangePenalResponse" />
+    </operation>
+  </portType>
+  <binding name="WSPenalPortBinding" type="tns:WSPenal">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="createPenal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="countPenal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findPenal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findAllPenal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="removePenal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarPenal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="editPenal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findRangePenal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSPenal">
+    <port name="WSPenalPort" binding="tns:WSPenalPortBinding">
+      <soap:address location="http://localhost:8080/WSCarcelJava/WSPenal" />
+    </port>
+  </service>
+</definitions>

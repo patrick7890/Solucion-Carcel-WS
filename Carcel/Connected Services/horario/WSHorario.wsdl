@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://service/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WSHorario" targetNamespace="http://service/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WSCarcelJava/WSHorario?xsd=1" namespace="http://service/" />
+    </xsd:schema>
+  </types>
+  <message name="createHorario">
+    <part name="parameters" element="tns:createHorario" />
+  </message>
+  <message name="createHorarioResponse">
+    <part name="parameters" element="tns:createHorarioResponse" />
+  </message>
+  <message name="countHorario">
+    <part name="parameters" element="tns:countHorario" />
+  </message>
+  <message name="countHorarioResponse">
+    <part name="parameters" element="tns:countHorarioResponse" />
+  </message>
+  <message name="findRangeHorario">
+    <part name="parameters" element="tns:findRangeHorario" />
+  </message>
+  <message name="findRangeHorarioResponse">
+    <part name="parameters" element="tns:findRangeHorarioResponse" />
+  </message>
+  <message name="editHorario">
+    <part name="parameters" element="tns:editHorario" />
+  </message>
+  <message name="editHorarioResponse">
+    <part name="parameters" element="tns:editHorarioResponse" />
+  </message>
+  <message name="removeHorario">
+    <part name="parameters" element="tns:removeHorario" />
+  </message>
+  <message name="removeHorarioResponse">
+    <part name="parameters" element="tns:removeHorarioResponse" />
+  </message>
+  <message name="buscarHorario">
+    <part name="parameters" element="tns:buscarHorario" />
+  </message>
+  <message name="buscarHorarioResponse">
+    <part name="parameters" element="tns:buscarHorarioResponse" />
+  </message>
+  <message name="findAllHorario">
+    <part name="parameters" element="tns:findAllHorario" />
+  </message>
+  <message name="findAllHorarioResponse">
+    <part name="parameters" element="tns:findAllHorarioResponse" />
+  </message>
+  <message name="findHorario">
+    <part name="parameters" element="tns:findHorario" />
+  </message>
+  <message name="findHorarioResponse">
+    <part name="parameters" element="tns:findHorarioResponse" />
+  </message>
+  <portType name="WSHorario">
+    <operation name="createHorario">
+      <input wsam:Action="http://service/WSHorario/createHorarioRequest" message="tns:createHorario" />
+      <output wsam:Action="http://service/WSHorario/createHorarioResponse" message="tns:createHorarioResponse" />
+    </operation>
+    <operation name="countHorario">
+      <input wsam:Action="http://service/WSHorario/countHorarioRequest" message="tns:countHorario" />
+      <output wsam:Action="http://service/WSHorario/countHorarioResponse" message="tns:countHorarioResponse" />
+    </operation>
+    <operation name="findRangeHorario">
+      <input wsam:Action="http://service/WSHorario/findRangeHorarioRequest" message="tns:findRangeHorario" />
+      <output wsam:Action="http://service/WSHorario/findRangeHorarioResponse" message="tns:findRangeHorarioResponse" />
+    </operation>
+    <operation name="editHorario">
+      <input wsam:Action="http://service/WSHorario/editHorarioRequest" message="tns:editHorario" />
+      <output wsam:Action="http://service/WSHorario/editHorarioResponse" message="tns:editHorarioResponse" />
+    </operation>
+    <operation name="removeHorario">
+      <input wsam:Action="http://service/WSHorario/removeHorarioRequest" message="tns:removeHorario" />
+      <output wsam:Action="http://service/WSHorario/removeHorarioResponse" message="tns:removeHorarioResponse" />
+    </operation>
+    <operation name="buscarHorario">
+      <input wsam:Action="http://service/WSHorario/buscarHorarioRequest" message="tns:buscarHorario" />
+      <output wsam:Action="http://service/WSHorario/buscarHorarioResponse" message="tns:buscarHorarioResponse" />
+    </operation>
+    <operation name="findAllHorario">
+      <input wsam:Action="http://service/WSHorario/findAllHorarioRequest" message="tns:findAllHorario" />
+      <output wsam:Action="http://service/WSHorario/findAllHorarioResponse" message="tns:findAllHorarioResponse" />
+    </operation>
+    <operation name="findHorario">
+      <input wsam:Action="http://service/WSHorario/findHorarioRequest" message="tns:findHorario" />
+      <output wsam:Action="http://service/WSHorario/findHorarioResponse" message="tns:findHorarioResponse" />
+    </operation>
+  </portType>
+  <binding name="WSHorarioPortBinding" type="tns:WSHorario">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="createHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="countHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findRangeHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="editHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="removeHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findAllHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSHorario">
+    <port name="WSHorarioPort" binding="tns:WSHorarioPortBinding">
+      <soap:address location="http://localhost:8080/WSCarcelJava/WSHorario" />
+    </port>
+  </service>
+</definitions>

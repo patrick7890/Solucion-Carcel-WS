@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://service/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WSVisita" targetNamespace="http://service/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WSCarcelJava/WSVisita?xsd=1" namespace="http://service/" />
+    </xsd:schema>
+  </types>
+  <message name="remove">
+    <part name="parameters" element="tns:remove" />
+  </message>
+  <message name="removeResponse">
+    <part name="parameters" element="tns:removeResponse" />
+  </message>
+  <message name="count">
+    <part name="parameters" element="tns:count" />
+  </message>
+  <message name="countResponse">
+    <part name="parameters" element="tns:countResponse" />
+  </message>
+  <message name="find">
+    <part name="parameters" element="tns:find" />
+  </message>
+  <message name="findResponse">
+    <part name="parameters" element="tns:findResponse" />
+  </message>
+  <message name="create">
+    <part name="parameters" element="tns:create" />
+  </message>
+  <message name="createResponse">
+    <part name="parameters" element="tns:createResponse" />
+  </message>
+  <message name="agregarVisita">
+    <part name="parameters" element="tns:agregarVisita" />
+  </message>
+  <message name="agregarVisitaResponse">
+    <part name="parameters" element="tns:agregarVisitaResponse" />
+  </message>
+  <message name="findAll">
+    <part name="parameters" element="tns:findAll" />
+  </message>
+  <message name="findAllResponse">
+    <part name="parameters" element="tns:findAllResponse" />
+  </message>
+  <message name="findRange">
+    <part name="parameters" element="tns:findRange" />
+  </message>
+  <message name="findRangeResponse">
+    <part name="parameters" element="tns:findRangeResponse" />
+  </message>
+  <message name="edit">
+    <part name="parameters" element="tns:edit" />
+  </message>
+  <message name="editResponse">
+    <part name="parameters" element="tns:editResponse" />
+  </message>
+  <message name="buscar">
+    <part name="parameters" element="tns:buscar" />
+  </message>
+  <message name="buscarResponse">
+    <part name="parameters" element="tns:buscarResponse" />
+  </message>
+  <portType name="WSVisita">
+    <operation name="remove">
+      <input wsam:Action="http://service/WSVisita/removeRequest" message="tns:remove" />
+      <output wsam:Action="http://service/WSVisita/removeResponse" message="tns:removeResponse" />
+    </operation>
+    <operation name="count">
+      <input wsam:Action="http://service/WSVisita/countRequest" message="tns:count" />
+      <output wsam:Action="http://service/WSVisita/countResponse" message="tns:countResponse" />
+    </operation>
+    <operation name="find">
+      <input wsam:Action="http://service/WSVisita/findRequest" message="tns:find" />
+      <output wsam:Action="http://service/WSVisita/findResponse" message="tns:findResponse" />
+    </operation>
+    <operation name="create">
+      <input wsam:Action="http://service/WSVisita/createRequest" message="tns:create" />
+      <output wsam:Action="http://service/WSVisita/createResponse" message="tns:createResponse" />
+    </operation>
+    <operation name="agregarVisita">
+      <input wsam:Action="http://service/WSVisita/agregarVisitaRequest" message="tns:agregarVisita" />
+      <output wsam:Action="http://service/WSVisita/agregarVisitaResponse" message="tns:agregarVisitaResponse" />
+    </operation>
+    <operation name="findAll">
+      <input wsam:Action="http://service/WSVisita/findAllRequest" message="tns:findAll" />
+      <output wsam:Action="http://service/WSVisita/findAllResponse" message="tns:findAllResponse" />
+    </operation>
+    <operation name="findRange">
+      <input wsam:Action="http://service/WSVisita/findRangeRequest" message="tns:findRange" />
+      <output wsam:Action="http://service/WSVisita/findRangeResponse" message="tns:findRangeResponse" />
+    </operation>
+    <operation name="edit">
+      <input wsam:Action="http://service/WSVisita/editRequest" message="tns:edit" />
+      <output wsam:Action="http://service/WSVisita/editResponse" message="tns:editResponse" />
+    </operation>
+    <operation name="buscar">
+      <input wsam:Action="http://service/WSVisita/buscarRequest" message="tns:buscar" />
+      <output wsam:Action="http://service/WSVisita/buscarResponse" message="tns:buscarResponse" />
+    </operation>
+  </portType>
+  <binding name="WSVisitaPortBinding" type="tns:WSVisita">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="remove">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="count">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="find">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="create">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarVisita">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findAll">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findRange">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="edit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSVisita">
+    <port name="WSVisitaPort" binding="tns:WSVisitaPortBinding">
+      <soap:address location="http://localhost:8080/WSCarcelJava/WSVisita" />
+    </port>
+  </service>
+</definitions>

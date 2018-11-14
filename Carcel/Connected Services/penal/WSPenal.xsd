@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service/" targetNamespace="http://service/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="buscarPenal" type="tns:buscarPenal" />
+  <xs:element name="buscarPenalResponse" type="tns:buscarPenalResponse" />
+  <xs:element name="countPenal" type="tns:countPenal" />
+  <xs:element name="countPenalResponse" type="tns:countPenalResponse" />
+  <xs:element name="createPenal" type="tns:createPenal" />
+  <xs:element name="createPenalResponse" type="tns:createPenalResponse" />
+  <xs:element name="editPenal" type="tns:editPenal" />
+  <xs:element name="editPenalResponse" type="tns:editPenalResponse" />
+  <xs:element name="findAllPenal" type="tns:findAllPenal" />
+  <xs:element name="findAllPenalResponse" type="tns:findAllPenalResponse" />
+  <xs:element name="findPenal" type="tns:findPenal" />
+  <xs:element name="findPenalResponse" type="tns:findPenalResponse" />
+  <xs:element name="findRangePenal" type="tns:findRangePenal" />
+  <xs:element name="findRangePenalResponse" type="tns:findRangePenalResponse" />
+  <xs:element name="penal" type="tns:penal" />
+  <xs:element name="removePenal" type="tns:removePenal" />
+  <xs:element name="removePenalResponse" type="tns:removePenalResponse" />
+  <xs:complexType name="createPenal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entity" type="tns:penal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="penal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="idPenal" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createPenalResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="findAllPenal">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="findAllPenalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:penal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="findPenal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="findPenalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:penal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removePenal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entity" type="tns:penal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removePenalResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="editPenal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entity" type="tns:penal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="editPenalResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countPenal">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="countPenalResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarPenal">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarPenalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:penal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="findRangePenal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="range" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="findRangePenalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:penal" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
