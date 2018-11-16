@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BibliotecaCarcel
 {
     [Serializable]
-    public class Visita
+    public class visita
     {
 
         private const long serialVersionUID = 1L;
@@ -33,16 +33,16 @@ namespace BibliotecaCarcel
         //ORIGINAL LINE: @JoinColumn(name = "PRESO_ID_PRESO", referencedColumnName = "ID_PRESO") @ManyToOne(optional = false) private Preso presoIdPreso;
         private Preso presoIdPreso;
 
-        public Visita()
+        public visita()
         {
         }
 
-        public Visita(string idVisita)
+        public visita(string idVisita)
         {
             this.idVisita = idVisita;
         }
 
-        public Visita(string idVisita, string observacion, string nombreV, short edad, short tiempoVisita)
+        public visita(string idVisita, string observacion, string nombreV, short edad, short tiempoVisita)
         {
             this.idVisita = idVisita;
             this.observacion = observacion;
@@ -51,7 +51,7 @@ namespace BibliotecaCarcel
             this.tiempoVisita = tiempoVisita;
         }
 
-        public Visita(string id, string observacion, string nombre, short edad)
+        public visita(string id, string observacion, string nombre, short edad)
         {
             this.idVisita = id;
             this.observacion = observacion;
@@ -160,11 +160,11 @@ namespace BibliotecaCarcel
         public override bool Equals(object @object)
         {
             // TODO: Warning - this method won't work in the case the id fields are not set
-            if (!(@object is Visita))
+            if (!(@object is visita))
             {
                 return false;
             }
-            Visita other = (Visita)@object;
+            visita other = (visita)@object;
             if ((string.ReferenceEquals(this.idVisita, null) && !string.ReferenceEquals(other.idVisita, null)) || (!string.ReferenceEquals(this.idVisita, null) && !this.idVisita.Equals(other.idVisita)))
             {
                 return false;

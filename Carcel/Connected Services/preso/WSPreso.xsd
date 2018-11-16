@@ -2,6 +2,8 @@
 <xs:schema xmlns:tns="http://service/" targetNamespace="http://service/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="AgregarPreso" type="tns:AgregarPreso" />
   <xs:element name="AgregarPresoResponse" type="tns:AgregarPresoResponse" />
+  <xs:element name="actualizarpreso" type="tns:actualizarpreso" />
+  <xs:element name="actualizarpresoResponse" type="tns:actualizarpresoResponse" />
   <xs:element name="buscarPreso" type="tns:buscarPreso" />
   <xs:element name="buscarPresoResponse" type="tns:buscarPresoResponse" />
   <xs:element name="countPreso" type="tns:countPreso" />
@@ -89,18 +91,24 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:preso" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="actualizarpreso">
+    <xs:sequence>
+      <xs:element name="id" type="xs:short" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="sexo" type="xs:unsignedShort" />
+      <xs:element name="visita" type="xs:unsignedShort" />
+      <xs:element name="penal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarpresoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarTodo">
     <xs:sequence />
   </xs:complexType>
   <xs:complexType name="listarTodoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:preso" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="findAllPreso">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="findAllPresoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:preso" />
     </xs:sequence>
@@ -115,14 +123,12 @@
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="removePreso">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="entity" type="tns:preso" />
-    </xs:sequence>
+  <xs:complexType name="findAllPreso">
+    <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="removePresoResponse">
+  <xs:complexType name="findAllPresoResponse">
     <xs:sequence>
-      <xs:element name="return" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:preso" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="editPreso">
@@ -131,6 +137,16 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="editPresoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removePreso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entity" type="tns:preso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removePresoResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>

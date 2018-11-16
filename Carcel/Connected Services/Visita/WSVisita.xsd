@@ -17,6 +17,8 @@
   <xs:element name="findRangeResponse" type="tns:findRangeResponse" />
   <xs:element name="findResponse" type="tns:findResponse" />
   <xs:element name="horario" type="tns:horario" />
+  <xs:element name="idvisita" type="tns:idvisita" />
+  <xs:element name="idvisitaResponse" type="tns:idvisitaResponse" />
   <xs:element name="penal" type="tns:penal" />
   <xs:element name="preso" type="tns:preso" />
   <xs:element name="remove" type="tns:remove" />
@@ -87,12 +89,20 @@
   </xs:complexType>
   <xs:complexType name="buscar">
     <xs:sequence>
-      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="buscarResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="tns:visita" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="idvisita">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="idvisitaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="remove">

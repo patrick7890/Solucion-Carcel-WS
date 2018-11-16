@@ -5,18 +5,6 @@
       <xsd:import schemaLocation="http://localhost:8080/WSCarcelJava/WSPreso?xsd=1" namespace="http://service/" />
     </xsd:schema>
   </types>
-  <message name="listarTodo">
-    <part name="parameters" element="tns:listarTodo" />
-  </message>
-  <message name="listarTodoResponse">
-    <part name="parameters" element="tns:listarTodoResponse" />
-  </message>
-  <message name="removePreso">
-    <part name="parameters" element="tns:removePreso" />
-  </message>
-  <message name="removePresoResponse">
-    <part name="parameters" element="tns:removePresoResponse" />
-  </message>
   <message name="findPreso">
     <part name="parameters" element="tns:findPreso" />
   </message>
@@ -29,29 +17,11 @@
   <message name="buscarPresoResponse">
     <part name="parameters" element="tns:buscarPresoResponse" />
   </message>
-  <message name="editPreso">
-    <part name="parameters" element="tns:editPreso" />
-  </message>
-  <message name="editPresoResponse">
-    <part name="parameters" element="tns:editPresoResponse" />
-  </message>
-  <message name="findAllPreso">
-    <part name="parameters" element="tns:findAllPreso" />
-  </message>
-  <message name="findAllPresoResponse">
-    <part name="parameters" element="tns:findAllPresoResponse" />
-  </message>
   <message name="countPreso">
     <part name="parameters" element="tns:countPreso" />
   </message>
   <message name="countPresoResponse">
     <part name="parameters" element="tns:countPresoResponse" />
-  </message>
-  <message name="AgregarPreso">
-    <part name="parameters" element="tns:AgregarPreso" />
-  </message>
-  <message name="AgregarPresoResponse">
-    <part name="parameters" element="tns:AgregarPresoResponse" />
   </message>
   <message name="findRangePreso">
     <part name="parameters" element="tns:findRangePreso" />
@@ -65,15 +35,43 @@
   <message name="createPresoResponse">
     <part name="parameters" element="tns:createPresoResponse" />
   </message>
+  <message name="editPreso">
+    <part name="parameters" element="tns:editPreso" />
+  </message>
+  <message name="editPresoResponse">
+    <part name="parameters" element="tns:editPresoResponse" />
+  </message>
+  <message name="removePreso">
+    <part name="parameters" element="tns:removePreso" />
+  </message>
+  <message name="removePresoResponse">
+    <part name="parameters" element="tns:removePresoResponse" />
+  </message>
+  <message name="findAllPreso">
+    <part name="parameters" element="tns:findAllPreso" />
+  </message>
+  <message name="findAllPresoResponse">
+    <part name="parameters" element="tns:findAllPresoResponse" />
+  </message>
+  <message name="AgregarPreso">
+    <part name="parameters" element="tns:AgregarPreso" />
+  </message>
+  <message name="AgregarPresoResponse">
+    <part name="parameters" element="tns:AgregarPresoResponse" />
+  </message>
+  <message name="listarTodo">
+    <part name="parameters" element="tns:listarTodo" />
+  </message>
+  <message name="listarTodoResponse">
+    <part name="parameters" element="tns:listarTodoResponse" />
+  </message>
+  <message name="actualizarpreso">
+    <part name="parameters" element="tns:actualizarpreso" />
+  </message>
+  <message name="actualizarpresoResponse">
+    <part name="parameters" element="tns:actualizarpresoResponse" />
+  </message>
   <portType name="WSPreso">
-    <operation name="listarTodo">
-      <input wsam:Action="http://service/WSPreso/listarTodoRequest" message="tns:listarTodo" />
-      <output wsam:Action="http://service/WSPreso/listarTodoResponse" message="tns:listarTodoResponse" />
-    </operation>
-    <operation name="removePreso">
-      <input wsam:Action="http://service/WSPreso/removePresoRequest" message="tns:removePreso" />
-      <output wsam:Action="http://service/WSPreso/removePresoResponse" message="tns:removePresoResponse" />
-    </operation>
     <operation name="findPreso">
       <input wsam:Action="http://service/WSPreso/findPresoRequest" message="tns:findPreso" />
       <output wsam:Action="http://service/WSPreso/findPresoResponse" message="tns:findPresoResponse" />
@@ -82,21 +80,9 @@
       <input wsam:Action="http://service/WSPreso/buscarPresoRequest" message="tns:buscarPreso" />
       <output wsam:Action="http://service/WSPreso/buscarPresoResponse" message="tns:buscarPresoResponse" />
     </operation>
-    <operation name="editPreso">
-      <input wsam:Action="http://service/WSPreso/editPresoRequest" message="tns:editPreso" />
-      <output wsam:Action="http://service/WSPreso/editPresoResponse" message="tns:editPresoResponse" />
-    </operation>
-    <operation name="findAllPreso">
-      <input wsam:Action="http://service/WSPreso/findAllPresoRequest" message="tns:findAllPreso" />
-      <output wsam:Action="http://service/WSPreso/findAllPresoResponse" message="tns:findAllPresoResponse" />
-    </operation>
     <operation name="countPreso">
       <input wsam:Action="http://service/WSPreso/countPresoRequest" message="tns:countPreso" />
       <output wsam:Action="http://service/WSPreso/countPresoResponse" message="tns:countPresoResponse" />
-    </operation>
-    <operation name="AgregarPreso">
-      <input wsam:Action="http://service/WSPreso/AgregarPresoRequest" message="tns:AgregarPreso" />
-      <output wsam:Action="http://service/WSPreso/AgregarPresoResponse" message="tns:AgregarPresoResponse" />
     </operation>
     <operation name="findRangePreso">
       <input wsam:Action="http://service/WSPreso/findRangePresoRequest" message="tns:findRangePreso" />
@@ -106,27 +92,33 @@
       <input wsam:Action="http://service/WSPreso/createPresoRequest" message="tns:createPreso" />
       <output wsam:Action="http://service/WSPreso/createPresoResponse" message="tns:createPresoResponse" />
     </operation>
+    <operation name="editPreso">
+      <input wsam:Action="http://service/WSPreso/editPresoRequest" message="tns:editPreso" />
+      <output wsam:Action="http://service/WSPreso/editPresoResponse" message="tns:editPresoResponse" />
+    </operation>
+    <operation name="removePreso">
+      <input wsam:Action="http://service/WSPreso/removePresoRequest" message="tns:removePreso" />
+      <output wsam:Action="http://service/WSPreso/removePresoResponse" message="tns:removePresoResponse" />
+    </operation>
+    <operation name="findAllPreso">
+      <input wsam:Action="http://service/WSPreso/findAllPresoRequest" message="tns:findAllPreso" />
+      <output wsam:Action="http://service/WSPreso/findAllPresoResponse" message="tns:findAllPresoResponse" />
+    </operation>
+    <operation name="AgregarPreso">
+      <input wsam:Action="http://service/WSPreso/AgregarPresoRequest" message="tns:AgregarPreso" />
+      <output wsam:Action="http://service/WSPreso/AgregarPresoResponse" message="tns:AgregarPresoResponse" />
+    </operation>
+    <operation name="listarTodo">
+      <input wsam:Action="http://service/WSPreso/listarTodoRequest" message="tns:listarTodo" />
+      <output wsam:Action="http://service/WSPreso/listarTodoResponse" message="tns:listarTodoResponse" />
+    </operation>
+    <operation name="actualizarpreso">
+      <input wsam:Action="http://service/WSPreso/actualizarpresoRequest" message="tns:actualizarpreso" />
+      <output wsam:Action="http://service/WSPreso/actualizarpresoResponse" message="tns:actualizarpresoResponse" />
+    </operation>
   </portType>
   <binding name="WSPresoPortBinding" type="tns:WSPreso">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarTodo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="removePreso">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="findPreso">
       <soap:operation soapAction="" />
       <input>
@@ -145,34 +137,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="editPreso">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="findAllPreso">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="countPreso">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="AgregarPreso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -191,6 +156,60 @@
       </output>
     </operation>
     <operation name="createPreso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="editPreso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="removePreso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findAllPreso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AgregarPreso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="actualizarpreso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

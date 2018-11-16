@@ -22,7 +22,7 @@ namespace BibliotecaCarcel
         private short minutos;
         //JAVA TO C# CONVERTER TODO TASK: Most Java annotations will not have direct .NET equivalent attributes:
         //ORIGINAL LINE: @OneToMany(cascade = javax.persistence.CascadeType.ALL, mappedBy = "horarioIdHorario") private java.util.List<Visita> visitaList;
-        private IList<Visita> visitaList;
+        private IList<visita> visitaList;
 
         public Horario()
         {
@@ -81,7 +81,7 @@ namespace BibliotecaCarcel
 
         //JAVA TO C# CONVERTER TODO TASK: Most Java annotations will not have direct .NET equivalent attributes:
         //ORIGINAL LINE: @XmlTransient public java.util.List<Visita> getVisitaList()
-        public virtual IList<Visita> VisitaList
+        public virtual IList<visita> VisitaList
         {
             get
             {

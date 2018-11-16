@@ -30,10 +30,11 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.visitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.presosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.presosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,19 +43,27 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.visitasToolStripMenuItem,
             this.presosToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(20, 60);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(760, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // visitasToolStripMenuItem
             // 
             this.visitasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarToolStripMenuItem});
+            this.registrarToolStripMenuItem,
+            this.listarToolStripMenuItem1});
             this.visitasToolStripMenuItem.Name = "visitasToolStripMenuItem";
             this.visitasToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.visitasToolStripMenuItem.Text = "Visitas";
+            // 
+            // registrarToolStripMenuItem
+            // 
+            this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
+            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarToolStripMenuItem.Text = "Registrar";
+            this.registrarToolStripMenuItem.Click += new System.EventHandler(this.registrarToolStripMenuItem_Click);
             // 
             // presosToolStripMenuItem
             // 
@@ -65,26 +74,26 @@
             this.presosToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.presosToolStripMenuItem.Text = "Presos";
             // 
-            // registrarToolStripMenuItem
-            // 
-            this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
-            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registrarToolStripMenuItem.Text = "Registrar";
-            this.registrarToolStripMenuItem.Click += new System.EventHandler(this.registrarToolStripMenuItem_Click);
-            // 
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.agregarToolStripMenuItem.Text = "Agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // listarToolStripMenuItem
             // 
             this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            this.listarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listarToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.listarToolStripMenuItem.Text = "Listar";
             this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click);
+            // 
+            // listarToolStripMenuItem1
+            // 
+            this.listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
+            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.listarToolStripMenuItem1.Text = "Listar";
+            this.listarToolStripMenuItem1.Click += new System.EventHandler(this.listarToolStripMenuItem1_Click);
             // 
             // index
             // 
@@ -96,6 +105,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "index";
             this.Text = "index";
+            this.TransparencyKey = System.Drawing.Color.Empty;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -111,5 +121,6 @@
         private System.Windows.Forms.ToolStripMenuItem presosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem1;
     }
 }

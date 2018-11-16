@@ -39,6 +39,8 @@
             this.cboPenal = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.cboVisita = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtID
@@ -104,6 +106,7 @@
             // 
             this.cboSexo.FormattingEnabled = true;
             this.cboSexo.Items.AddRange(new object[] {
+            "Seleccione",
             "Masculino",
             "Femenino"});
             this.cboSexo.Location = new System.Drawing.Point(130, 185);
@@ -126,7 +129,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(130, 349);
+            this.btnAgregar.Location = new System.Drawing.Point(74, 348);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 11;
@@ -138,18 +141,41 @@
             // 
             this.cboVisita.FormattingEnabled = true;
             this.cboVisita.Items.AddRange(new object[] {
+            "Seleccione",
             "Si",
-            "NO"});
+            "No"});
             this.cboVisita.Location = new System.Drawing.Point(130, 232);
             this.cboVisita.Name = "cboVisita";
             this.cboVisita.Size = new System.Drawing.Size(121, 21);
             this.cboVisita.TabIndex = 12;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(244, 86);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(164, 348);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 14;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 450);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cboVisita);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cboPenal);
@@ -181,6 +207,8 @@
         private System.Windows.Forms.ComboBox cboPenal;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ComboBox cboVisita;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
 

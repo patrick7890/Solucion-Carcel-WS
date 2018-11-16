@@ -14,14 +14,14 @@ namespace BibliotecaCarcel
         //ORIGINAL LINE: @Id @Basic(optional = false) @NotNull @Column(name = "ID_PRESO") private System.Nullable<short> idPreso;
         private short? idPreso;
         //JAVA TO C# CONVERTER TODO TASK: Most Java annotations will not have direct .NET equivalent attributes:
-        //ORIGINAL LINE: @Basic(optional = false) @NotNull @Size(min = 1, max = 25) @Column(name = "NOMBRE_V") private String nombreV;
-        private string nombreV;
+        //ORIGINAL LINE: @Basic(optional = false) @NotNull @Size(min = 1, max = 25) @Column(name = "NOMBRE_V") private String nombre;
+        private string nombre;
         //JAVA TO C# CONVERTER TODO TASK: Most Java annotations will not have direct .NET equivalent attributes:
-        //ORIGINAL LINE: @Basic(optional = false) @NotNull @Column(name = "SEXO_V") private System.Nullable<char> sexoV;
-        private char? sexoV;
+        //ORIGINAL LINE: @Basic(optional = false) @NotNull @Column(name = "SEXO_V") private System.Nullable<char> sexo;
+        private char? sexo;
         //JAVA TO C# CONVERTER TODO TASK: Most Java annotations will not have direct .NET equivalent attributes:
-        //ORIGINAL LINE: @Basic(optional = false) @NotNull @Column(name = "VISITA_V") private System.Nullable<char> visitaV;
-        private char? visitaV;
+        //ORIGINAL LINE: @Basic(optional = false) @NotNull @Column(name = "VISITA_V") private System.Nullable<char> visita;
+        private char? visita;
         //JAVA TO C# CONVERTER TODO TASK: Most Java annotations will not have direct .NET equivalent attributes:
         //ORIGINAL LINE: @JoinColumn(name = "PENAL_ID_PENAL", referencedColumnName = "ID_PENAL") @ManyToOne(optional = false) private Penal penalIdPenal;
         private Penal penalIdPenal;
@@ -35,12 +35,12 @@ namespace BibliotecaCarcel
             this.idPreso = idPreso;
         }
 
-        public Preso(short? idPreso, string nombreV, char? sexoV, char? visitaV)
+        public Preso(short? idPreso, string nombre, char? sexo, char? visita)
         {
             this.idPreso = idPreso;
-            this.nombreV = nombreV;
-            this.sexoV = sexoV;
-            this.visitaV = visitaV;
+            this.nombre = nombre;
+            this.sexo = sexo;
+            this.visita = visita;
         }
 
         public virtual short? IdPreso
@@ -56,41 +56,41 @@ namespace BibliotecaCarcel
         }
 
 
-        public virtual string NombreV
+        public virtual string Nombre
         {
             get
             {
-                return nombreV;
+                return nombre;
             }
             set
             {
-                this.nombreV = value;
+                this.nombre = value;
             }
         }
 
 
-        public virtual char? SexoV
+        public virtual char? Sexo
         {
             get
             {
-                return sexoV;
+                return sexo;
             }
             set
             {
-                this.sexoV = value;
+                this.sexo = value;
             }
         }
 
 
-        public virtual char? VisitaV
+        public virtual char? Visita
         {
             get
             {
-                return visitaV;
+                return visita;
             }
             set
             {
-                this.visitaV = value;
+                this.visita = value;
             }
         }
 
@@ -132,7 +132,7 @@ namespace BibliotecaCarcel
 
         public override string ToString()
         {
-            return nombreV;
+            return nombre;
         }
 
     }

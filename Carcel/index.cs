@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Carcel
 {
-    public partial class index : Form
+    public partial class index : MetroFramework.Forms.MetroForm
     {
         public index()
         {
@@ -37,6 +37,13 @@ namespace Carcel
             LP.MdiParent = this;
             LP.Show();
 
+        }
+
+        private void listarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ListarVisita LP = new ListarVisita();
+            LP.MdiParent = this;
+            LP.Show();
         }
     }
 }

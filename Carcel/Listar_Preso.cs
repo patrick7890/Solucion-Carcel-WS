@@ -10,12 +10,19 @@ using System.Windows.Forms;
 using BibliotecaCarcel;
 namespace Carcel
 {
-    public partial class Listar_Preso : Form
+    public partial class Listar_Preso : MetroFramework.Forms.MetroForm
     {
         public Listar_Preso()
         {
             InitializeComponent();
+            timer1.Interval = 10000;
+            cargarPresos();
 
+
+        }
+
+        public void cargarPresos()
+        {
             preso.WSPresoClient p = new preso.WSPresoClient();
             penal.WSPenalClient pe = new penal.WSPenalClient();
             List<Preso> lp = new List<Preso>();
@@ -27,22 +34,22 @@ namespace Carcel
                 Preso pre = new Preso();
                 Penal pena = new Penal();
                 pre.IdPreso = presos[i].idPreso;
-                pre.NombreV = presos[i].nombreV;
+                pre.Nombre = presos[i].nombreV;
                 if (presos[i].sexoV == 0)
                 {
-                    pre.SexoV = 'M';
+                    pre.Sexo = 'M';
                 }
                 else
                 {
-                    pre.SexoV = 'F';
+                    pre.Sexo = 'F';
                 }
                 if (presos[i].visitaV == 0)
                 {
-                    pre.VisitaV = 'S';
+                    pre.Visita = 'S';
                 }
                 else
                 {
-                    pre.VisitaV = 'N';
+                    pre.Visita = 'N';
                 }
 
                 penal.penal pen = pe.buscarPenal((int)presos[i].penalIdPenal.idPenal);
@@ -53,7 +60,12 @@ namespace Carcel
                 lp.Add(pre);
             }
             dataGridView1.DataSource = lp;
+            dataGridView1.Refresh();
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            cargarPresos();
         }
     }
 }

@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -80,6 +89,12 @@
     <Compile Include="index.Designer.cs">
       <DependentUpon>index.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListarVisita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarVisita.Designer.cs">
+      <DependentUpon>ListarVisita.cs</DependentUpon>
+    </Compile>
     <Compile Include="Listar_Preso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="index.resx">
       <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarVisita.resx">
+      <DependentUpon>ListarVisita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Listar_Preso.resx">
       <DependentUpon>Listar_Preso.cs</DependentUpon>
@@ -177,6 +195,9 @@
     <None Include="Connected Services\penal\WSPenal.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\preso\Carcel.preso.actualizarpresoResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\preso\Carcel.preso.AgregarPresoResponse1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -238,6 +259,9 @@
     <None Include="Connected Services\Visita\Carcel.Visita.findResponse1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\Visita\Carcel.Visita.idvisitaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\Visita\Carcel.Visita.removeResponse1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -248,6 +272,7 @@
     <None Include="Connected Services\Visita\WSVisita.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

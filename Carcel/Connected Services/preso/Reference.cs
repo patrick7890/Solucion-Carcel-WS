@@ -16,66 +16,18 @@ namespace Carcel.preso {
     public interface WSPreso {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/listarTodoRequest", ReplyAction="http://service/WSPreso/listarTodoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Carcel.preso.listarTodoResponse listarTodo(Carcel.preso.listarTodoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/listarTodoRequest", ReplyAction="http://service/WSPreso/listarTodoResponse")]
-        System.Threading.Tasks.Task<Carcel.preso.listarTodoResponse> listarTodoAsync(Carcel.preso.listarTodoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/removePresoRequest", ReplyAction="http://service/WSPreso/removePresoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Carcel.preso.removePresoResponse1 removePreso(Carcel.preso.removePresoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/removePresoRequest", ReplyAction="http://service/WSPreso/removePresoResponse")]
-        System.Threading.Tasks.Task<Carcel.preso.removePresoResponse1> removePresoAsync(Carcel.preso.removePresoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/findPresoRequest", ReplyAction="http://service/WSPreso/findPresoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
@@ -93,14 +45,16 @@ namespace Carcel.preso {
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/buscarPresoRequest", ReplyAction="http://service/WSPreso/buscarPresoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
@@ -116,66 +70,18 @@ namespace Carcel.preso {
         System.Threading.Tasks.Task<Carcel.preso.buscarPresoResponse1> buscarPresoAsync(Carcel.preso.buscarPresoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/editPresoRequest", ReplyAction="http://service/WSPreso/editPresoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Carcel.preso.editPresoResponse1 editPreso(Carcel.preso.editPresoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/editPresoRequest", ReplyAction="http://service/WSPreso/editPresoResponse")]
-        System.Threading.Tasks.Task<Carcel.preso.editPresoResponse1> editPresoAsync(Carcel.preso.editPresoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/findAllPresoRequest", ReplyAction="http://service/WSPreso/findAllPresoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Carcel.preso.findAllPresoResponse findAllPreso(Carcel.preso.findAllPresoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/findAllPresoRequest", ReplyAction="http://service/WSPreso/findAllPresoResponse")]
-        System.Threading.Tasks.Task<Carcel.preso.findAllPresoResponse> findAllPresoAsync(Carcel.preso.findAllPresoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/countPresoRequest", ReplyAction="http://service/WSPreso/countPresoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
@@ -191,41 +97,18 @@ namespace Carcel.preso {
         System.Threading.Tasks.Task<Carcel.preso.countPresoResponse1> countPresoAsync(Carcel.preso.countPresoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/AgregarPresoRequest", ReplyAction="http://service/WSPreso/AgregarPresoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Carcel.preso.AgregarPresoResponse1 AgregarPreso(Carcel.preso.AgregarPresoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/AgregarPresoRequest", ReplyAction="http://service/WSPreso/AgregarPresoResponse")]
-        System.Threading.Tasks.Task<Carcel.preso.AgregarPresoResponse1> AgregarPresoAsync(Carcel.preso.AgregarPresoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/findRangePresoRequest", ReplyAction="http://service/WSPreso/findRangePresoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
@@ -243,14 +126,16 @@ namespace Carcel.preso {
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/createPresoRequest", ReplyAction="http://service/WSPreso/createPresoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
@@ -264,6 +149,232 @@ namespace Carcel.preso {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/createPresoRequest", ReplyAction="http://service/WSPreso/createPresoResponse")]
         System.Threading.Tasks.Task<Carcel.preso.createPresoResponse1> createPresoAsync(Carcel.preso.createPresoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/editPresoRequest", ReplyAction="http://service/WSPreso/editPresoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Carcel.preso.editPresoResponse1 editPreso(Carcel.preso.editPresoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/editPresoRequest", ReplyAction="http://service/WSPreso/editPresoResponse")]
+        System.Threading.Tasks.Task<Carcel.preso.editPresoResponse1> editPresoAsync(Carcel.preso.editPresoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/removePresoRequest", ReplyAction="http://service/WSPreso/removePresoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Carcel.preso.removePresoResponse1 removePreso(Carcel.preso.removePresoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/removePresoRequest", ReplyAction="http://service/WSPreso/removePresoResponse")]
+        System.Threading.Tasks.Task<Carcel.preso.removePresoResponse1> removePresoAsync(Carcel.preso.removePresoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/findAllPresoRequest", ReplyAction="http://service/WSPreso/findAllPresoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Carcel.preso.findAllPresoResponse findAllPreso(Carcel.preso.findAllPresoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/findAllPresoRequest", ReplyAction="http://service/WSPreso/findAllPresoResponse")]
+        System.Threading.Tasks.Task<Carcel.preso.findAllPresoResponse> findAllPresoAsync(Carcel.preso.findAllPresoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/AgregarPresoRequest", ReplyAction="http://service/WSPreso/AgregarPresoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Carcel.preso.AgregarPresoResponse1 AgregarPreso(Carcel.preso.AgregarPresoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/AgregarPresoRequest", ReplyAction="http://service/WSPreso/AgregarPresoResponse")]
+        System.Threading.Tasks.Task<Carcel.preso.AgregarPresoResponse1> AgregarPresoAsync(Carcel.preso.AgregarPresoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/listarTodoRequest", ReplyAction="http://service/WSPreso/listarTodoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Carcel.preso.listarTodoResponse listarTodo(Carcel.preso.listarTodoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/listarTodoRequest", ReplyAction="http://service/WSPreso/listarTodoResponse")]
+        System.Threading.Tasks.Task<Carcel.preso.listarTodoResponse> listarTodoAsync(Carcel.preso.listarTodoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/actualizarpresoRequest", ReplyAction="http://service/WSPreso/actualizarpresoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removePreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAllPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(listarTodo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(actualizarpreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgregarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countPreso))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPresoResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findPreso))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Carcel.preso.actualizarpresoResponse1 actualizarpreso(Carcel.preso.actualizarpresoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSPreso/actualizarpresoRequest", ReplyAction="http://service/WSPreso/actualizarpresoResponse")]
+        System.Threading.Tasks.Task<Carcel.preso.actualizarpresoResponse1> actualizarpresoAsync(Carcel.preso.actualizarpresoRequest request);
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
+    public partial class removePresoResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool returnField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool @return {
+            get {
+                return this.returnField;
+            }
+            set {
+                this.returnField = value;
+                this.RaisePropertyChanged("return");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
+    public partial class removePreso : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private preso entityField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public preso entity {
+            get {
+                return this.entityField;
+            }
+            set {
+                this.entityField = value;
+                this.RaisePropertyChanged("entity");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     /// <remarks/>
@@ -526,53 +637,7 @@ namespace Carcel.preso {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
-    public partial class removePresoResponse : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private bool returnField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public bool @return {
-            get {
-                return this.returnField;
-            }
-            set {
-                this.returnField = value;
-                this.RaisePropertyChanged("return");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
-    public partial class removePreso : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private preso entityField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public preso entity {
-            get {
-                return this.entityField;
-            }
-            set {
-                this.entityField = value;
-                this.RaisePropertyChanged("entity");
-            }
-        }
+    public partial class findAllPreso : object, System.ComponentModel.INotifyPropertyChanged {
         
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
@@ -654,7 +719,7 @@ namespace Carcel.preso {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
-    public partial class findAllPreso : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class listarTodo : object, System.ComponentModel.INotifyPropertyChanged {
         
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
@@ -672,7 +737,109 @@ namespace Carcel.preso {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
-    public partial class listarTodo : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class actualizarpresoResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool returnField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool @return {
+            get {
+                return this.returnField;
+            }
+            set {
+                this.returnField = value;
+                this.RaisePropertyChanged("return");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
+    public partial class actualizarpreso : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private short idField;
+        
+        private string nombreField;
+        
+        private ushort sexoField;
+        
+        private ushort visitaField;
+        
+        private int penalField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public short id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+                this.RaisePropertyChanged("id");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("nombre");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public ushort sexo {
+            get {
+                return this.sexoField;
+            }
+            set {
+                this.sexoField = value;
+                this.RaisePropertyChanged("sexo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public ushort visita {
+            get {
+                return this.visitaField;
+            }
+            set {
+                this.visitaField = value;
+                this.RaisePropertyChanged("visita");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int penal {
+            get {
+                return this.penalField;
+            }
+            set {
+                this.penalField = value;
+                this.RaisePropertyChanged("penal");
+            }
+        }
         
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
@@ -985,70 +1152,6 @@ namespace Carcel.preso {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodo", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class listarTodoRequest {
-        
-        public listarTodoRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class listarTodoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Carcel.preso.preso[] @return;
-        
-        public listarTodoResponse() {
-        }
-        
-        public listarTodoResponse(Carcel.preso.preso[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="removePreso", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class removePresoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Carcel.preso.preso entity;
-        
-        public removePresoRequest() {
-        }
-        
-        public removePresoRequest(Carcel.preso.preso entity) {
-            this.entity = entity;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="removePresoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class removePresoResponse1 {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public removePresoResponse1() {
-        }
-        
-        public removePresoResponse1(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="findPreso", WrapperNamespace="http://service/", IsWrapped=true)]
     public partial class findPresoRequest {
         
@@ -1121,70 +1224,6 @@ namespace Carcel.preso {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="editPreso", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class editPresoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Carcel.preso.preso entity;
-        
-        public editPresoRequest() {
-        }
-        
-        public editPresoRequest(Carcel.preso.preso entity) {
-            this.entity = entity;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="editPresoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class editPresoResponse1 {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public editPresoResponse1() {
-        }
-        
-        public editPresoResponse1(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="findAllPreso", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class findAllPresoRequest {
-        
-        public findAllPresoRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="findAllPresoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class findAllPresoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Carcel.preso.preso[] @return;
-        
-        public findAllPresoResponse() {
-        }
-        
-        public findAllPresoResponse(Carcel.preso.preso[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="countPreso", WrapperNamespace="http://service/", IsWrapped=true)]
     public partial class countPresoRequest {
         
@@ -1206,62 +1245,6 @@ namespace Carcel.preso {
         }
         
         public countPresoResponse1(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AgregarPreso", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class AgregarPresoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string id;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public ushort sexo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public ushort visita;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int penal;
-        
-        public AgregarPresoRequest() {
-        }
-        
-        public AgregarPresoRequest(string id, string nombre, ushort sexo, ushort visita, int penal) {
-            this.id = id;
-            this.nombre = nombre;
-            this.sexo = sexo;
-            this.visita = visita;
-            this.penal = penal;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AgregarPresoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class AgregarPresoResponse1 {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public AgregarPresoResponse1() {
-        }
-        
-        public AgregarPresoResponse1(bool @return) {
             this.@return = @return;
         }
     }
@@ -1338,6 +1321,246 @@ namespace Carcel.preso {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="editPreso", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class editPresoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Carcel.preso.preso entity;
+        
+        public editPresoRequest() {
+        }
+        
+        public editPresoRequest(Carcel.preso.preso entity) {
+            this.entity = entity;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="editPresoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class editPresoResponse1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public editPresoResponse1() {
+        }
+        
+        public editPresoResponse1(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="removePreso", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class removePresoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Carcel.preso.preso entity;
+        
+        public removePresoRequest() {
+        }
+        
+        public removePresoRequest(Carcel.preso.preso entity) {
+            this.entity = entity;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="removePresoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class removePresoResponse1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public removePresoResponse1() {
+        }
+        
+        public removePresoResponse1(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="findAllPreso", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class findAllPresoRequest {
+        
+        public findAllPresoRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="findAllPresoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class findAllPresoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Carcel.preso.preso[] @return;
+        
+        public findAllPresoResponse() {
+        }
+        
+        public findAllPresoResponse(Carcel.preso.preso[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="AgregarPreso", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class AgregarPresoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ushort sexo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ushort visita;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int penal;
+        
+        public AgregarPresoRequest() {
+        }
+        
+        public AgregarPresoRequest(string id, string nombre, ushort sexo, ushort visita, int penal) {
+            this.id = id;
+            this.nombre = nombre;
+            this.sexo = sexo;
+            this.visita = visita;
+            this.penal = penal;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="AgregarPresoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class AgregarPresoResponse1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public AgregarPresoResponse1() {
+        }
+        
+        public AgregarPresoResponse1(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodo", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class listarTodoRequest {
+        
+        public listarTodoRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class listarTodoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Carcel.preso.preso[] @return;
+        
+        public listarTodoResponse() {
+        }
+        
+        public listarTodoResponse(Carcel.preso.preso[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarpreso", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class actualizarpresoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public short id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ushort sexo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ushort visita;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int penal;
+        
+        public actualizarpresoRequest() {
+        }
+        
+        public actualizarpresoRequest(short id, string nombre, ushort sexo, ushort visita, int penal) {
+            this.id = id;
+            this.nombre = nombre;
+            this.sexo = sexo;
+            this.visita = visita;
+            this.penal = penal;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarpresoResponse", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class actualizarpresoResponse1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public actualizarpresoResponse1() {
+        }
+        
+        public actualizarpresoResponse1(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface WSPresoChannel : Carcel.preso.WSPreso, System.ServiceModel.IClientChannel {
     }
@@ -1363,50 +1586,6 @@ namespace Carcel.preso {
         
         public WSPresoClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Carcel.preso.listarTodoResponse Carcel.preso.WSPreso.listarTodo(Carcel.preso.listarTodoRequest request) {
-            return base.Channel.listarTodo(request);
-        }
-        
-        public Carcel.preso.preso[] listarTodo() {
-            Carcel.preso.listarTodoRequest inValue = new Carcel.preso.listarTodoRequest();
-            Carcel.preso.listarTodoResponse retVal = ((Carcel.preso.WSPreso)(this)).listarTodo(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Carcel.preso.listarTodoResponse> Carcel.preso.WSPreso.listarTodoAsync(Carcel.preso.listarTodoRequest request) {
-            return base.Channel.listarTodoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Carcel.preso.listarTodoResponse> listarTodoAsync() {
-            Carcel.preso.listarTodoRequest inValue = new Carcel.preso.listarTodoRequest();
-            return ((Carcel.preso.WSPreso)(this)).listarTodoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Carcel.preso.removePresoResponse1 Carcel.preso.WSPreso.removePreso(Carcel.preso.removePresoRequest request) {
-            return base.Channel.removePreso(request);
-        }
-        
-        public bool removePreso(Carcel.preso.preso entity) {
-            Carcel.preso.removePresoRequest inValue = new Carcel.preso.removePresoRequest();
-            inValue.entity = entity;
-            Carcel.preso.removePresoResponse1 retVal = ((Carcel.preso.WSPreso)(this)).removePreso(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Carcel.preso.removePresoResponse1> Carcel.preso.WSPreso.removePresoAsync(Carcel.preso.removePresoRequest request) {
-            return base.Channel.removePresoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Carcel.preso.removePresoResponse1> removePresoAsync(Carcel.preso.preso entity) {
-            Carcel.preso.removePresoRequest inValue = new Carcel.preso.removePresoRequest();
-            inValue.entity = entity;
-            return ((Carcel.preso.WSPreso)(this)).removePresoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1456,50 +1635,6 @@ namespace Carcel.preso {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Carcel.preso.editPresoResponse1 Carcel.preso.WSPreso.editPreso(Carcel.preso.editPresoRequest request) {
-            return base.Channel.editPreso(request);
-        }
-        
-        public bool editPreso(Carcel.preso.preso entity) {
-            Carcel.preso.editPresoRequest inValue = new Carcel.preso.editPresoRequest();
-            inValue.entity = entity;
-            Carcel.preso.editPresoResponse1 retVal = ((Carcel.preso.WSPreso)(this)).editPreso(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Carcel.preso.editPresoResponse1> Carcel.preso.WSPreso.editPresoAsync(Carcel.preso.editPresoRequest request) {
-            return base.Channel.editPresoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Carcel.preso.editPresoResponse1> editPresoAsync(Carcel.preso.preso entity) {
-            Carcel.preso.editPresoRequest inValue = new Carcel.preso.editPresoRequest();
-            inValue.entity = entity;
-            return ((Carcel.preso.WSPreso)(this)).editPresoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Carcel.preso.findAllPresoResponse Carcel.preso.WSPreso.findAllPreso(Carcel.preso.findAllPresoRequest request) {
-            return base.Channel.findAllPreso(request);
-        }
-        
-        public Carcel.preso.preso[] findAllPreso() {
-            Carcel.preso.findAllPresoRequest inValue = new Carcel.preso.findAllPresoRequest();
-            Carcel.preso.findAllPresoResponse retVal = ((Carcel.preso.WSPreso)(this)).findAllPreso(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Carcel.preso.findAllPresoResponse> Carcel.preso.WSPreso.findAllPresoAsync(Carcel.preso.findAllPresoRequest request) {
-            return base.Channel.findAllPresoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Carcel.preso.findAllPresoResponse> findAllPresoAsync() {
-            Carcel.preso.findAllPresoRequest inValue = new Carcel.preso.findAllPresoRequest();
-            return ((Carcel.preso.WSPreso)(this)).findAllPresoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Carcel.preso.countPresoResponse1 Carcel.preso.WSPreso.countPreso(Carcel.preso.countPresoRequest request) {
             return base.Channel.countPreso(request);
         }
@@ -1518,37 +1653,6 @@ namespace Carcel.preso {
         public System.Threading.Tasks.Task<Carcel.preso.countPresoResponse1> countPresoAsync() {
             Carcel.preso.countPresoRequest inValue = new Carcel.preso.countPresoRequest();
             return ((Carcel.preso.WSPreso)(this)).countPresoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Carcel.preso.AgregarPresoResponse1 Carcel.preso.WSPreso.AgregarPreso(Carcel.preso.AgregarPresoRequest request) {
-            return base.Channel.AgregarPreso(request);
-        }
-        
-        public bool AgregarPreso(string id, string nombre, ushort sexo, ushort visita, int penal) {
-            Carcel.preso.AgregarPresoRequest inValue = new Carcel.preso.AgregarPresoRequest();
-            inValue.id = id;
-            inValue.nombre = nombre;
-            inValue.sexo = sexo;
-            inValue.visita = visita;
-            inValue.penal = penal;
-            Carcel.preso.AgregarPresoResponse1 retVal = ((Carcel.preso.WSPreso)(this)).AgregarPreso(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Carcel.preso.AgregarPresoResponse1> Carcel.preso.WSPreso.AgregarPresoAsync(Carcel.preso.AgregarPresoRequest request) {
-            return base.Channel.AgregarPresoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Carcel.preso.AgregarPresoResponse1> AgregarPresoAsync(string id, string nombre, ushort sexo, ushort visita, int penal) {
-            Carcel.preso.AgregarPresoRequest inValue = new Carcel.preso.AgregarPresoRequest();
-            inValue.id = id;
-            inValue.nombre = nombre;
-            inValue.sexo = sexo;
-            inValue.visita = visita;
-            inValue.penal = penal;
-            return ((Carcel.preso.WSPreso)(this)).AgregarPresoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1595,6 +1699,156 @@ namespace Carcel.preso {
             Carcel.preso.createPresoRequest inValue = new Carcel.preso.createPresoRequest();
             inValue.entity = entity;
             return ((Carcel.preso.WSPreso)(this)).createPresoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Carcel.preso.editPresoResponse1 Carcel.preso.WSPreso.editPreso(Carcel.preso.editPresoRequest request) {
+            return base.Channel.editPreso(request);
+        }
+        
+        public bool editPreso(Carcel.preso.preso entity) {
+            Carcel.preso.editPresoRequest inValue = new Carcel.preso.editPresoRequest();
+            inValue.entity = entity;
+            Carcel.preso.editPresoResponse1 retVal = ((Carcel.preso.WSPreso)(this)).editPreso(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Carcel.preso.editPresoResponse1> Carcel.preso.WSPreso.editPresoAsync(Carcel.preso.editPresoRequest request) {
+            return base.Channel.editPresoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Carcel.preso.editPresoResponse1> editPresoAsync(Carcel.preso.preso entity) {
+            Carcel.preso.editPresoRequest inValue = new Carcel.preso.editPresoRequest();
+            inValue.entity = entity;
+            return ((Carcel.preso.WSPreso)(this)).editPresoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Carcel.preso.removePresoResponse1 Carcel.preso.WSPreso.removePreso(Carcel.preso.removePresoRequest request) {
+            return base.Channel.removePreso(request);
+        }
+        
+        public bool removePreso(Carcel.preso.preso entity) {
+            Carcel.preso.removePresoRequest inValue = new Carcel.preso.removePresoRequest();
+            inValue.entity = entity;
+            Carcel.preso.removePresoResponse1 retVal = ((Carcel.preso.WSPreso)(this)).removePreso(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Carcel.preso.removePresoResponse1> Carcel.preso.WSPreso.removePresoAsync(Carcel.preso.removePresoRequest request) {
+            return base.Channel.removePresoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Carcel.preso.removePresoResponse1> removePresoAsync(Carcel.preso.preso entity) {
+            Carcel.preso.removePresoRequest inValue = new Carcel.preso.removePresoRequest();
+            inValue.entity = entity;
+            return ((Carcel.preso.WSPreso)(this)).removePresoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Carcel.preso.findAllPresoResponse Carcel.preso.WSPreso.findAllPreso(Carcel.preso.findAllPresoRequest request) {
+            return base.Channel.findAllPreso(request);
+        }
+        
+        public Carcel.preso.preso[] findAllPreso() {
+            Carcel.preso.findAllPresoRequest inValue = new Carcel.preso.findAllPresoRequest();
+            Carcel.preso.findAllPresoResponse retVal = ((Carcel.preso.WSPreso)(this)).findAllPreso(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Carcel.preso.findAllPresoResponse> Carcel.preso.WSPreso.findAllPresoAsync(Carcel.preso.findAllPresoRequest request) {
+            return base.Channel.findAllPresoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Carcel.preso.findAllPresoResponse> findAllPresoAsync() {
+            Carcel.preso.findAllPresoRequest inValue = new Carcel.preso.findAllPresoRequest();
+            return ((Carcel.preso.WSPreso)(this)).findAllPresoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Carcel.preso.AgregarPresoResponse1 Carcel.preso.WSPreso.AgregarPreso(Carcel.preso.AgregarPresoRequest request) {
+            return base.Channel.AgregarPreso(request);
+        }
+        
+        public bool AgregarPreso(string id, string nombre, ushort sexo, ushort visita, int penal) {
+            Carcel.preso.AgregarPresoRequest inValue = new Carcel.preso.AgregarPresoRequest();
+            inValue.id = id;
+            inValue.nombre = nombre;
+            inValue.sexo = sexo;
+            inValue.visita = visita;
+            inValue.penal = penal;
+            Carcel.preso.AgregarPresoResponse1 retVal = ((Carcel.preso.WSPreso)(this)).AgregarPreso(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Carcel.preso.AgregarPresoResponse1> Carcel.preso.WSPreso.AgregarPresoAsync(Carcel.preso.AgregarPresoRequest request) {
+            return base.Channel.AgregarPresoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Carcel.preso.AgregarPresoResponse1> AgregarPresoAsync(string id, string nombre, ushort sexo, ushort visita, int penal) {
+            Carcel.preso.AgregarPresoRequest inValue = new Carcel.preso.AgregarPresoRequest();
+            inValue.id = id;
+            inValue.nombre = nombre;
+            inValue.sexo = sexo;
+            inValue.visita = visita;
+            inValue.penal = penal;
+            return ((Carcel.preso.WSPreso)(this)).AgregarPresoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Carcel.preso.listarTodoResponse Carcel.preso.WSPreso.listarTodo(Carcel.preso.listarTodoRequest request) {
+            return base.Channel.listarTodo(request);
+        }
+        
+        public Carcel.preso.preso[] listarTodo() {
+            Carcel.preso.listarTodoRequest inValue = new Carcel.preso.listarTodoRequest();
+            Carcel.preso.listarTodoResponse retVal = ((Carcel.preso.WSPreso)(this)).listarTodo(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Carcel.preso.listarTodoResponse> Carcel.preso.WSPreso.listarTodoAsync(Carcel.preso.listarTodoRequest request) {
+            return base.Channel.listarTodoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Carcel.preso.listarTodoResponse> listarTodoAsync() {
+            Carcel.preso.listarTodoRequest inValue = new Carcel.preso.listarTodoRequest();
+            return ((Carcel.preso.WSPreso)(this)).listarTodoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Carcel.preso.actualizarpresoResponse1 Carcel.preso.WSPreso.actualizarpreso(Carcel.preso.actualizarpresoRequest request) {
+            return base.Channel.actualizarpreso(request);
+        }
+        
+        public bool actualizarpreso(short id, string nombre, ushort sexo, ushort visita, int penal) {
+            Carcel.preso.actualizarpresoRequest inValue = new Carcel.preso.actualizarpresoRequest();
+            inValue.id = id;
+            inValue.nombre = nombre;
+            inValue.sexo = sexo;
+            inValue.visita = visita;
+            inValue.penal = penal;
+            Carcel.preso.actualizarpresoResponse1 retVal = ((Carcel.preso.WSPreso)(this)).actualizarpreso(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Carcel.preso.actualizarpresoResponse1> Carcel.preso.WSPreso.actualizarpresoAsync(Carcel.preso.actualizarpresoRequest request) {
+            return base.Channel.actualizarpresoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Carcel.preso.actualizarpresoResponse1> actualizarpresoAsync(short id, string nombre, ushort sexo, ushort visita, int penal) {
+            Carcel.preso.actualizarpresoRequest inValue = new Carcel.preso.actualizarpresoRequest();
+            inValue.id = id;
+            inValue.nombre = nombre;
+            inValue.sexo = sexo;
+            inValue.visita = visita;
+            inValue.penal = penal;
+            return ((Carcel.preso.WSPreso)(this)).actualizarpresoAsync(inValue);
         }
     }
 }

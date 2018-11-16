@@ -29,11 +29,11 @@
   <message name="createResponse">
     <part name="parameters" element="tns:createResponse" />
   </message>
-  <message name="agregarVisita">
-    <part name="parameters" element="tns:agregarVisita" />
+  <message name="findRange">
+    <part name="parameters" element="tns:findRange" />
   </message>
-  <message name="agregarVisitaResponse">
-    <part name="parameters" element="tns:agregarVisitaResponse" />
+  <message name="findRangeResponse">
+    <part name="parameters" element="tns:findRangeResponse" />
   </message>
   <message name="findAll">
     <part name="parameters" element="tns:findAll" />
@@ -41,11 +41,11 @@
   <message name="findAllResponse">
     <part name="parameters" element="tns:findAllResponse" />
   </message>
-  <message name="findRange">
-    <part name="parameters" element="tns:findRange" />
+  <message name="agregarVisita">
+    <part name="parameters" element="tns:agregarVisita" />
   </message>
-  <message name="findRangeResponse">
-    <part name="parameters" element="tns:findRangeResponse" />
+  <message name="agregarVisitaResponse">
+    <part name="parameters" element="tns:agregarVisitaResponse" />
   </message>
   <message name="edit">
     <part name="parameters" element="tns:edit" />
@@ -58,6 +58,12 @@
   </message>
   <message name="buscarResponse">
     <part name="parameters" element="tns:buscarResponse" />
+  </message>
+  <message name="idvisita">
+    <part name="parameters" element="tns:idvisita" />
+  </message>
+  <message name="idvisitaResponse">
+    <part name="parameters" element="tns:idvisitaResponse" />
   </message>
   <portType name="WSVisita">
     <operation name="remove">
@@ -76,17 +82,17 @@
       <input wsam:Action="http://service/WSVisita/createRequest" message="tns:create" />
       <output wsam:Action="http://service/WSVisita/createResponse" message="tns:createResponse" />
     </operation>
-    <operation name="agregarVisita">
-      <input wsam:Action="http://service/WSVisita/agregarVisitaRequest" message="tns:agregarVisita" />
-      <output wsam:Action="http://service/WSVisita/agregarVisitaResponse" message="tns:agregarVisitaResponse" />
+    <operation name="findRange">
+      <input wsam:Action="http://service/WSVisita/findRangeRequest" message="tns:findRange" />
+      <output wsam:Action="http://service/WSVisita/findRangeResponse" message="tns:findRangeResponse" />
     </operation>
     <operation name="findAll">
       <input wsam:Action="http://service/WSVisita/findAllRequest" message="tns:findAll" />
       <output wsam:Action="http://service/WSVisita/findAllResponse" message="tns:findAllResponse" />
     </operation>
-    <operation name="findRange">
-      <input wsam:Action="http://service/WSVisita/findRangeRequest" message="tns:findRange" />
-      <output wsam:Action="http://service/WSVisita/findRangeResponse" message="tns:findRangeResponse" />
+    <operation name="agregarVisita">
+      <input wsam:Action="http://service/WSVisita/agregarVisitaRequest" message="tns:agregarVisita" />
+      <output wsam:Action="http://service/WSVisita/agregarVisitaResponse" message="tns:agregarVisitaResponse" />
     </operation>
     <operation name="edit">
       <input wsam:Action="http://service/WSVisita/editRequest" message="tns:edit" />
@@ -95,6 +101,10 @@
     <operation name="buscar">
       <input wsam:Action="http://service/WSVisita/buscarRequest" message="tns:buscar" />
       <output wsam:Action="http://service/WSVisita/buscarResponse" message="tns:buscarResponse" />
+    </operation>
+    <operation name="idvisita">
+      <input wsam:Action="http://service/WSVisita/idvisitaRequest" message="tns:idvisita" />
+      <output wsam:Action="http://service/WSVisita/idvisitaResponse" message="tns:idvisitaResponse" />
     </operation>
   </portType>
   <binding name="WSVisitaPortBinding" type="tns:WSVisita">
@@ -135,7 +145,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="agregarVisita">
+    <operation name="findRange">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -153,7 +163,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="findRange">
+    <operation name="agregarVisita">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -172,6 +182,15 @@
       </output>
     </operation>
     <operation name="buscar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="idvisita">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

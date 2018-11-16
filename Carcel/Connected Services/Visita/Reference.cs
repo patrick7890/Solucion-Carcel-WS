@@ -27,6 +27,8 @@ namespace Carcel.Visita {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisita))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
@@ -51,6 +53,8 @@ namespace Carcel.Visita {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisita))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
@@ -75,6 +79,8 @@ namespace Carcel.Visita {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisita))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
@@ -99,6 +105,8 @@ namespace Carcel.Visita {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisita))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
@@ -112,54 +120,6 @@ namespace Carcel.Visita {
         System.Threading.Tasks.Task<Carcel.Visita.createResponse1> createAsync(Carcel.Visita.createRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/agregarVisitaRequest", ReplyAction="http://service/WSVisita/agregarVisitaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(create))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(count))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(agregarVisitaResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(agregarVisita))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(edit))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(find))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Carcel.Visita.agregarVisitaResponse1 agregarVisita(Carcel.Visita.agregarVisitaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/agregarVisitaRequest", ReplyAction="http://service/WSVisita/agregarVisitaResponse")]
-        System.Threading.Tasks.Task<Carcel.Visita.agregarVisitaResponse1> agregarVisitaAsync(Carcel.Visita.agregarVisitaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/findAllRequest", ReplyAction="http://service/WSVisita/findAllResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(create))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(count))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(agregarVisitaResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(agregarVisita))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(edit))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findResponse))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(find))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Carcel.Visita.findAllResponse findAll(Carcel.Visita.findAllRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/findAllRequest", ReplyAction="http://service/WSVisita/findAllResponse")]
-        System.Threading.Tasks.Task<Carcel.Visita.findAllResponse> findAllAsync(Carcel.Visita.findAllRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/findRangeRequest", ReplyAction="http://service/WSVisita/findRangeResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createResponse))]
@@ -171,6 +131,8 @@ namespace Carcel.Visita {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisita))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
@@ -184,6 +146,58 @@ namespace Carcel.Visita {
         System.Threading.Tasks.Task<Carcel.Visita.findRangeResponse> findRangeAsync(Carcel.Visita.findRangeRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/findAllRequest", ReplyAction="http://service/WSVisita/findAllResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(create))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(count))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(agregarVisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(agregarVisita))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisita))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(edit))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(find))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Carcel.Visita.findAllResponse findAll(Carcel.Visita.findAllRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/findAllRequest", ReplyAction="http://service/WSVisita/findAllResponse")]
+        System.Threading.Tasks.Task<Carcel.Visita.findAllResponse> findAllAsync(Carcel.Visita.findAllRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/agregarVisitaRequest", ReplyAction="http://service/WSVisita/agregarVisitaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(create))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(count))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(agregarVisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(agregarVisita))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisita))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(edit))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(find))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Carcel.Visita.agregarVisitaResponse1 agregarVisita(Carcel.Visita.agregarVisitaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/agregarVisitaRequest", ReplyAction="http://service/WSVisita/agregarVisitaResponse")]
+        System.Threading.Tasks.Task<Carcel.Visita.agregarVisitaResponse1> agregarVisitaAsync(Carcel.Visita.agregarVisitaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/editRequest", ReplyAction="http://service/WSVisita/editResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createResponse))]
@@ -195,6 +209,8 @@ namespace Carcel.Visita {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisita))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
@@ -219,6 +235,8 @@ namespace Carcel.Visita {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisita))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
@@ -230,6 +248,32 @@ namespace Carcel.Visita {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/buscarRequest", ReplyAction="http://service/WSVisita/buscarResponse")]
         System.Threading.Tasks.Task<Carcel.Visita.buscarResponse1> buscarAsync(Carcel.Visita.buscarRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/idvisitaRequest", ReplyAction="http://service/WSVisita/idvisitaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(createResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(create))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(countResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(count))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(agregarVisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(agregarVisita))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findAll))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(removeResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(remove))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisitaResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(idvisita))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscarResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(buscar))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(editResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(edit))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(findResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(find))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Carcel.Visita.idvisitaResponse1 idvisita(Carcel.Visita.idvisitaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://service/WSVisita/idvisitaRequest", ReplyAction="http://service/WSVisita/idvisitaResponse")]
+        System.Threading.Tasks.Task<Carcel.Visita.idvisitaResponse1> idvisitaAsync(Carcel.Visita.idvisitaRequest request);
     }
     
     /// <remarks/>
@@ -758,6 +802,56 @@ namespace Carcel.Visita {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
+    public partial class idvisitaResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string returnField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string @return {
+            get {
+                return this.returnField;
+            }
+            set {
+                this.returnField = value;
+                this.RaisePropertyChanged("return");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
+    public partial class idvisita : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
     public partial class buscarResponse : object, System.ComponentModel.INotifyPropertyChanged {
         
         private visita returnField;
@@ -792,11 +886,11 @@ namespace Carcel.Visita {
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service/")]
     public partial class buscar : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private int idField;
+        private string idField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int id {
+        public string id {
             get {
                 return this.idField;
             }
@@ -1273,6 +1367,70 @@ namespace Carcel.Visita {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="findRange", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class findRangeRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("range", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true)]
+        public System.Nullable<int>[] range;
+        
+        public findRangeRequest() {
+        }
+        
+        public findRangeRequest(System.Nullable<int>[] range) {
+            this.range = range;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="findRangeResponse", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class findRangeResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Carcel.Visita.visita[] @return;
+        
+        public findRangeResponse() {
+        }
+        
+        public findRangeResponse(Carcel.Visita.visita[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="findAll", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class findAllRequest {
+        
+        public findAllRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="findAllResponse", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class findAllResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Carcel.Visita.visita[] @return;
+        
+        public findAllResponse() {
+        }
+        
+        public findAllResponse(Carcel.Visita.visita[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="agregarVisita", WrapperNamespace="http://service/", IsWrapped=true)]
     public partial class agregarVisitaRequest {
         
@@ -1334,70 +1492,6 @@ namespace Carcel.Visita {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="findAll", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class findAllRequest {
-        
-        public findAllRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="findAllResponse", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class findAllResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Carcel.Visita.visita[] @return;
-        
-        public findAllResponse() {
-        }
-        
-        public findAllResponse(Carcel.Visita.visita[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="findRange", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class findRangeRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("range", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true)]
-        public System.Nullable<int>[] range;
-        
-        public findRangeRequest() {
-        }
-        
-        public findRangeRequest(System.Nullable<int>[] range) {
-            this.range = range;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="findRangeResponse", WrapperNamespace="http://service/", IsWrapped=true)]
-    public partial class findRangeResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Carcel.Visita.visita[] @return;
-        
-        public findRangeResponse() {
-        }
-        
-        public findRangeResponse(Carcel.Visita.visita[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="edit", WrapperNamespace="http://service/", IsWrapped=true)]
     public partial class editRequest {
         
@@ -1439,12 +1533,12 @@ namespace Carcel.Visita {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
+        public string id;
         
         public buscarRequest() {
         }
         
-        public buscarRequest(int id) {
+        public buscarRequest(string id) {
             this.id = id;
         }
     }
@@ -1463,6 +1557,34 @@ namespace Carcel.Visita {
         }
         
         public buscarResponse1(Carcel.Visita.visita @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="idvisita", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class idvisitaRequest {
+        
+        public idvisitaRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="idvisitaResponse", WrapperNamespace="http://service/", IsWrapped=true)]
+    public partial class idvisitaResponse1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://service/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string @return;
+        
+        public idvisitaResponse1() {
+        }
+        
+        public idvisitaResponse1(string @return) {
             this.@return = @return;
         }
     }
@@ -1585,6 +1707,50 @@ namespace Carcel.Visita {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Carcel.Visita.findRangeResponse Carcel.Visita.WSVisita.findRange(Carcel.Visita.findRangeRequest request) {
+            return base.Channel.findRange(request);
+        }
+        
+        public Carcel.Visita.visita[] findRange(System.Nullable<int>[] range) {
+            Carcel.Visita.findRangeRequest inValue = new Carcel.Visita.findRangeRequest();
+            inValue.range = range;
+            Carcel.Visita.findRangeResponse retVal = ((Carcel.Visita.WSVisita)(this)).findRange(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Carcel.Visita.findRangeResponse> Carcel.Visita.WSVisita.findRangeAsync(Carcel.Visita.findRangeRequest request) {
+            return base.Channel.findRangeAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Carcel.Visita.findRangeResponse> findRangeAsync(System.Nullable<int>[] range) {
+            Carcel.Visita.findRangeRequest inValue = new Carcel.Visita.findRangeRequest();
+            inValue.range = range;
+            return ((Carcel.Visita.WSVisita)(this)).findRangeAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Carcel.Visita.findAllResponse Carcel.Visita.WSVisita.findAll(Carcel.Visita.findAllRequest request) {
+            return base.Channel.findAll(request);
+        }
+        
+        public Carcel.Visita.visita[] findAll() {
+            Carcel.Visita.findAllRequest inValue = new Carcel.Visita.findAllRequest();
+            Carcel.Visita.findAllResponse retVal = ((Carcel.Visita.WSVisita)(this)).findAll(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Carcel.Visita.findAllResponse> Carcel.Visita.WSVisita.findAllAsync(Carcel.Visita.findAllRequest request) {
+            return base.Channel.findAllAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Carcel.Visita.findAllResponse> findAllAsync() {
+            Carcel.Visita.findAllRequest inValue = new Carcel.Visita.findAllRequest();
+            return ((Carcel.Visita.WSVisita)(this)).findAllAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Carcel.Visita.agregarVisitaResponse1 Carcel.Visita.WSVisita.agregarVisita(Carcel.Visita.agregarVisitaRequest request) {
             return base.Channel.agregarVisita(request);
         }
@@ -1618,50 +1784,6 @@ namespace Carcel.Visita {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Carcel.Visita.findAllResponse Carcel.Visita.WSVisita.findAll(Carcel.Visita.findAllRequest request) {
-            return base.Channel.findAll(request);
-        }
-        
-        public Carcel.Visita.visita[] findAll() {
-            Carcel.Visita.findAllRequest inValue = new Carcel.Visita.findAllRequest();
-            Carcel.Visita.findAllResponse retVal = ((Carcel.Visita.WSVisita)(this)).findAll(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Carcel.Visita.findAllResponse> Carcel.Visita.WSVisita.findAllAsync(Carcel.Visita.findAllRequest request) {
-            return base.Channel.findAllAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Carcel.Visita.findAllResponse> findAllAsync() {
-            Carcel.Visita.findAllRequest inValue = new Carcel.Visita.findAllRequest();
-            return ((Carcel.Visita.WSVisita)(this)).findAllAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Carcel.Visita.findRangeResponse Carcel.Visita.WSVisita.findRange(Carcel.Visita.findRangeRequest request) {
-            return base.Channel.findRange(request);
-        }
-        
-        public Carcel.Visita.visita[] findRange(System.Nullable<int>[] range) {
-            Carcel.Visita.findRangeRequest inValue = new Carcel.Visita.findRangeRequest();
-            inValue.range = range;
-            Carcel.Visita.findRangeResponse retVal = ((Carcel.Visita.WSVisita)(this)).findRange(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Carcel.Visita.findRangeResponse> Carcel.Visita.WSVisita.findRangeAsync(Carcel.Visita.findRangeRequest request) {
-            return base.Channel.findRangeAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Carcel.Visita.findRangeResponse> findRangeAsync(System.Nullable<int>[] range) {
-            Carcel.Visita.findRangeRequest inValue = new Carcel.Visita.findRangeRequest();
-            inValue.range = range;
-            return ((Carcel.Visita.WSVisita)(this)).findRangeAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Carcel.Visita.editResponse1 Carcel.Visita.WSVisita.edit(Carcel.Visita.editRequest request) {
             return base.Channel.edit(request);
         }
@@ -1689,7 +1811,7 @@ namespace Carcel.Visita {
             return base.Channel.buscar(request);
         }
         
-        public Carcel.Visita.visita buscar(int id) {
+        public Carcel.Visita.visita buscar(string id) {
             Carcel.Visita.buscarRequest inValue = new Carcel.Visita.buscarRequest();
             inValue.id = id;
             Carcel.Visita.buscarResponse1 retVal = ((Carcel.Visita.WSVisita)(this)).buscar(inValue);
@@ -1701,10 +1823,31 @@ namespace Carcel.Visita {
             return base.Channel.buscarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Carcel.Visita.buscarResponse1> buscarAsync(int id) {
+        public System.Threading.Tasks.Task<Carcel.Visita.buscarResponse1> buscarAsync(string id) {
             Carcel.Visita.buscarRequest inValue = new Carcel.Visita.buscarRequest();
             inValue.id = id;
             return ((Carcel.Visita.WSVisita)(this)).buscarAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Carcel.Visita.idvisitaResponse1 Carcel.Visita.WSVisita.idvisita(Carcel.Visita.idvisitaRequest request) {
+            return base.Channel.idvisita(request);
+        }
+        
+        public string idvisita() {
+            Carcel.Visita.idvisitaRequest inValue = new Carcel.Visita.idvisitaRequest();
+            Carcel.Visita.idvisitaResponse1 retVal = ((Carcel.Visita.WSVisita)(this)).idvisita(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Carcel.Visita.idvisitaResponse1> Carcel.Visita.WSVisita.idvisitaAsync(Carcel.Visita.idvisitaRequest request) {
+            return base.Channel.idvisitaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Carcel.Visita.idvisitaResponse1> idvisitaAsync() {
+            Carcel.Visita.idvisitaRequest inValue = new Carcel.Visita.idvisitaRequest();
+            return ((Carcel.Visita.WSVisita)(this)).idvisitaAsync(inValue);
         }
     }
 }
